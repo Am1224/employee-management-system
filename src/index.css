@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove or comment out this line */
+/* * {
+  color: #fff;
+} */
+
+/* Instead, target only text elements you want white */
+body, div, p, h1, h2, h3, h4, h5, h6, span, a {
+  color: #fff;
+}
+
+body {
+  background-color: #111;
+}
+
+#tasklist::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+#tasklist::-webkit-scrollbar-thumb {
+  background-color: rgb(143, 143, 143);
+  border-radius: 50px;
+}
+
+/* Add this to ensure select/options are visible */
+select, option {
+  color: #000 !important;
+  background: #fff !important;
+}
